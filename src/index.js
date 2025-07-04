@@ -7,7 +7,11 @@ import connectDB from "./db/index.js";
 
 dotenv.config({
     path: './.env'
-})
+});
+
+console.log("ACCESS TOKEN SECRET:", process.env.ACCESS_TOKEN_SECRET); 
+console.log("REFRESH_TOKEN_SECRET:", process.env.REFRESH_TOKEN_SECRET);
+
 
 
 connectDB()
